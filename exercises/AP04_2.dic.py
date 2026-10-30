@@ -15,19 +15,23 @@ print(type(dicionario_vazio).__name__)
 
 # criar um dicionário com elementos
 pessoa = {'nome': 'João', 'idade': 30, 'cidade': 'Lisboa'}
+print(f'\nlistagem directa de dicionário')
 print(pessoa)
 print(type(pessoa).__name__)
 
 # aceder a elementos do dicionário por chave
+print(f'\naceder a elementos do dicionário por chave')
 print(f"Nome: {pessoa['nome']}")
 print(f"Idade: {pessoa['idade']}")
 print(f"Cidade: {pessoa['cidade']}")
 
 # adicionar elementos ao dicionário
+print(f'\nadicionar elementos ao dicionário')
 pessoa['profissao'] = 'Engenheiro'
 print(pessoa)
 
 # modificar elementos do dicionário
+print('modificar elementos do dicionário')
 pessoa['idade'] = 31
 print(pessoa)
 
@@ -75,6 +79,7 @@ for linha in tabela:
     # iterar sobre cada par chave-valor da linha (dicionário)
     for chave, valor in linha.items():
         print(f"  {chave}: {valor}")
+# for 'var_chave','var_valor' in 'dicionario'.items():
 
 # também se pode criar um dicionário a partir de listas de chaves e valores
 chaves = ['nome', 'idade', 'cidade']
